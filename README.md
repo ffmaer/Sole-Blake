@@ -2,7 +2,11 @@ SOLE-BLAKE Implementation
 ==========
 A Project for Basic Algorithms, Fall 2010 Tengchao Zhou , New York University
 
-The project mainly achieved four goals. The first achievement is that it has one-block overhead and last block that is a partial block implementation; the second one is that it can read binary file do SOLE-Encoding and decode the SOLE-Encoding back to a binary file; the third one is that it has a simple Java interface; finally the last one is that it implements Blake 256 version, which is a finalist of SHA-3 competition.
+The project mainly achieved four goals.
+* It has one-block overhead and it can handle the case when the last block is a partial block.
+* It can encode a binary file using SOLE and decode it.
+* It has a simple Java interface.
+* It implements Blake 256 version.
 
 How to insert EOF two blocks before the end?
 -------------------------
