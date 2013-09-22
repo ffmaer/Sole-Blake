@@ -1,8 +1,6 @@
 SOLE-BLAKE Implementation
 ==========
-A Project for Basic Algorithms, Fall 2010
-
-Tengchao Zhou , New York University
+A Project for Basic Algorithms, Fall 2010, Tengchao Zhou, New York University
 
 The project mainly achieved five goals.
 * It has one-block overhead.
