@@ -92,7 +92,7 @@ public class SoleDemo extends JFrame {
         outInput.setText(" ");
         content.add(outInput);
         
-        l4.setText("Hash(SHA-3 finalist Blake 256-bit version): ");
+        l4.setText("Hash(SHA-3 finalist Blake 64-bit version): ");
         l4.setAlignmentX(Component.CENTER_ALIGNMENT);
         content.add(l4);
         
