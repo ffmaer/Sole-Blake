@@ -1,4 +1,4 @@
-SOLE-BLAKE Implementation
+SOLE-Blake Implementation
 ==========
 A Project for Basic Algorithms, Fall 2010, Tengchao Zhou, New York University
 
