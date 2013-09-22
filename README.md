@@ -1,6 +1,7 @@
 SOLE-BLAKE Implementation
 ==========
 A Project for Basic Algorithms, Fall 2010
+
 Tengchao Zhou , New York University
 
 The project mainly achieved four goals. The first achievement is that it has one-block
@@ -8,7 +9,9 @@ overhead and last block that is a partial block implementation; the second one i
 can read binary file do SOLE-Encoding and decode the SOLE-Encoding back to a
 binary file; the third one is that it has a simple Java interface; finally the last one is that
 it implements Blake 256 version, which is a finalist of SHA-3 competition.
+
 How to insert EOF two blocks before the end?
+-------------------------
 We actually need 3 blocks buffer to ensure EOF is inserted before the last ending two
 blocks . If it is still far from the EOF, every time when you have four full blocks in you
 buffer, you can just send two blocks to the SOLE encoder. And SOLE encoder will
@@ -40,14 +43,18 @@ remember whether we have done this transformation to the last block or not. So w
 ends up with having for EOFs. Concretely, B + 0 means EOF; B + 1 means EOF with
 an extra 1(this is another problem); B + 2 means EOF with last block flipped; B + 3
 means EOF with and extra 1 and last block flipped.
+
 Why Blake[1]?
+-------------------------
 This project gives me a self introduction of some famous hash functions like MD5,
 SHA-1, etc (I would also like to mention MD6). Since I did not find a very nice hash
 function that I can directly plug into SOLE so I did learn how to build a hash function
 from the very beginning. And I did try to do that, and I knew it was like reinventing the
 wheel. I was stopped by Dodis, so I finally choose to use Blake, which is a nice fit of
 SOLE to make it a on-line hash function.
+
 Some extra words before closing up
+-------------------------
 It is a good chance for me to actually read a binary file at the bit level. (We know that
 most computer use byte as the basic number of bits to perform operations.) And Java
 has something called signed byte, which is painful when I need to convert bits back to
@@ -60,6 +67,9 @@ time limitation, I can't actually build one. But I have learned how to build a n
 guestbook[2] by using Google App Engine and I have a chance to take a look at virtual
 OS on the cloud called Amazon Web Service. I would like to make a nice interface
 after the final.
+
 [1]Blake's author's website http://www.131002.net/blake/
+
 [2]the guestbook, you can leave message to me http://ffmaer.appspot.com/
+
 [3] XOR-Hash : A Hash Function Based on XOR, http://c.ffm.cn/gAfD8N
