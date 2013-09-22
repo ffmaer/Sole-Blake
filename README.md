@@ -26,3 +26,7 @@ http://www.cs.nyu.edu/~dodis/ps/prefix.pdf
 What is Blake?
 -------------------------
 https://131002.net/blake/
+
+What were the challenges?
+-------------------------
+https://github.com/ffmaer/Sole-Blake/blob/master/Challenges.md
