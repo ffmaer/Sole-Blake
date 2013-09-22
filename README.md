@@ -7,7 +7,7 @@ The project mainly achieved five goals.
 * It can handle the case when the last block is a partial block.
 * It can encode a binary file using SOLE and decode it.
 * It has a simple Java interface.
-* It implements Blake 256 version.
+* It implements Blake 64 version.
 
 How to use it?
 -------------------------
