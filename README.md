@@ -1,9 +1,12 @@
 SOLE-BLAKE Implementation
 ==========
-A Project for Basic Algorithms, Fall 2010 Tengchao Zhou , New York University
+A Project for Basic Algorithms, Fall 2010
 
-The project mainly achieved four goals.
-* It has one-block overhead and it can handle the case when the last block is a partial block.
+Tengchao Zhou , New York University
+
+The project mainly achieved five goals.
+* It has one-block overhead.
+* It can handle the case when the last block is a partial block.
 * It can encode a binary file using SOLE and decode it.
 * It has a simple Java interface.
 * It implements Blake 256 version.
