@@ -11,11 +11,11 @@ The project mainly achieved five goals.
 
 How to use it?
 -------------------------
-1.use command line and enter the followings and you will get new files and 256-bit blake hash
+1. Use command line and enter the followings and you will get a 64-bit blake hash and an encodedthen decoded new file
 
         java SoleBlake lena.bmp 
 
-2.use command line and enter the followings and you can play around with different versions of SOLE-encoding :)
+2. Use command line and enter the followings and you can play around with different versions of SOLE-encoding :)
 
         java SoleDemo
 
