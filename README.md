@@ -15,7 +15,7 @@ How to use it?
 
         java SoleBlake lena.bmp 
 
-2. Use command line and enter the followings and you can play around with different versions of SOLE-encoding :)
+2. Use command line and enter the followings and you can play around with different versions of SOLE-Blake encoding :)
 
         java SoleDemo
 
