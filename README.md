@@ -9,6 +9,14 @@ The project mainly achieved five goals.
 * It has a simple Java interface.
 * It implements Blake 256 version.
 
+What is SOLE?
+-------------------------
+http://www.cs.nyu.edu/~dodis/ps/prefix.pdf
+
+What is Blake?
+-------------------------
+https://131002.net/blake/
+
 How to insert EOF two blocks before the end?
 -------------------------
 We actually need 3 blocks buffer to ensure EOF is inserted before the last ending two blocks . If it is still far from the EOF, every time when you have four full blocks in you buffer, you can just send two blocks to the SOLE encoder. And SOLE encoder will handle the rest of the work. So two full blocks were left in your buffer. When you read the last binary bit of your input file, you will discover that your four block buffer is not fully filled (in rare case, you will have exactly have four full blocks; this also depends on the block size you choose; if you choose a b to be a multiple of 8, this is more than likely to happen). If you have more than three blocks, you can safely send the two full blocks to you SOLE encoder; then you send the rest (that's a little bit more than one block) to the EOF handler. If you have less or equal to three blocks in your buffer, you just send all these blocks directly to the EOF handler.
